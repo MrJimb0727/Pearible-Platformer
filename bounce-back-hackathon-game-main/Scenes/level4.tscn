@@ -15,7 +15,7 @@ font_color = Color(0, 0, 0, 1)
 font_size = 149
 font_color = Color(1, 0, 0, 1)
 
-[node name="Level2" type="Node2D" unique_id=1010392366]
+[node name="Level4" type="Node2D" unique_id=1010392366]
 
 [node name="Environment" type="Node2D" parent="." unique_id=187565421]
 

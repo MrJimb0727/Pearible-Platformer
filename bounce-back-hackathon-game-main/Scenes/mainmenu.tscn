@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dn5pslkse8sha"]
 
 [ext_resource type="Script" uid="uid://kprdwej20utq" path="res://Scripts/mainmenu.gd" id="1_pposm"]
+[ext_resource type="Texture2D" uid="uid://dxw84bokdiljw" path="res://Assets/Textures/SunsetBg.png" id="2_web8u"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
 font_size = 70
@@ -18,6 +19,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pposm")
+
+[node name="SunsetBg" type="Sprite2D" parent="." unique_id=1731027280]
+position = Vector2(588, 130)
+scale = Vector2(0.27999908, 0.31999907)
+texture = ExtResource("2_web8u")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1970695631]
 layout_mode = 1

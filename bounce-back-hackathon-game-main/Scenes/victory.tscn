@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://vug6os3cpb3h"]
+
+[ext_resource type="Texture2D" uid="uid://bdbxrj31pyo4b" path="res://Assets/Textures/explosion.jpg" id="1_7yj50"]
+[ext_resource type="Script" uid="uid://dh48cjphr6wq0" path="res://Scripts/victory.gd" id="1_slr2v"]
+[ext_resource type="Texture2D" uid="uid://bvuy8djc8ry7f" path="res://Assets/Textures/pearto (1).png" id="2_slr2v"]
+[ext_resource type="Texture2D" uid="uid://ck6noywmk82sm" path="res://Assets/Textures/Rat.png" id="3_f34f5"]
+[ext_resource type="Texture2D" uid="uid://bwstmo0c3m5wf" path="res://Assets/Textures/baguette_nobg.png" id="4_xy5eq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 36
+font_color = Color(1, 0, 0, 1)
+outline_size = 9
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Victory" type="Control" unique_id=37948376]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_slr2v")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1686563360]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(29.359997, 16.559998)
+color = Color(1, 0, 0, 1)
+
+[node name="Explosion" type="Sprite2D" parent="." unique_id=1247002572]
+position = Vector2(200, 351)
+texture = ExtResource("1_7yj50")
+
+[node name="Explosion2" type="Sprite2D" parent="." unique_id=1836064212]
+position = Vector2(882, 575)
+texture = ExtResource("1_7yj50")
+
+[node name="Explosion3" type="Sprite2D" parent="." unique_id=1900702744]
+position = Vector2(1068, 198)
+texture = ExtResource("1_7yj50")
+
+[node name="Label" type="Label" parent="." unique_id=504559757]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -548.5
+offset_right = 548.5
+offset_bottom = 103.0
+grow_horizontal = 2
+text = "PEARTO HAS BECOME THE EVIL QUEEN OF RATS
+(play 1 million billion more times to get the secret good ending)"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+
+[node name="Pearto(1)" type="Sprite2D" parent="." unique_id=1509613786]
+position = Vector2(584, 355)
+scale = Vector2(0.12000153, 0.12000153)
+texture = ExtResource("2_slr2v")
+
+[node name="Rat" type="Sprite2D" parent="." unique_id=522973747]
+position = Vector2(212, 523)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat2" type="Sprite2D" parent="." unique_id=1737659024]
+position = Vector2(1046, 578)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat3" type="Sprite2D" parent="." unique_id=276635692]
+position = Vector2(964, 302)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat4" type="Sprite2D" parent="." unique_id=2063033937]
+position = Vector2(309, 283)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat5" type="Sprite2D" parent="." unique_id=1779933037]
+position = Vector2(108, 269)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat6" type="Sprite2D" parent="." unique_id=577390909]
+position = Vector2(886, 531)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat7" type="Sprite2D" parent="." unique_id=74001651]
+position = Vector2(332, 503)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat8" type="Sprite2D" parent="." unique_id=1691100161]
+position = Vector2(1121, 388)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat9" type="Sprite2D" parent="." unique_id=1230324279]
+position = Vector2(810, 279)
+texture = ExtResource("3_f34f5")
+
+[node name="Rat10" type="Sprite2D" parent="." unique_id=601935928]
+position = Vector2(127, 591)
+texture = ExtResource("3_f34f5")
+
+[node name="BaguetteNobg" type="Sprite2D" parent="." unique_id=1823781996]
+position = Vector2(421, 199)
+scale = Vector2(0.157219, 0.12312249)
+texture = ExtResource("4_xy5eq")
+
+[node name="BaguetteNobg2" type="Sprite2D" parent="." unique_id=1146111634]
+position = Vector2(175, 145)
+scale = Vector2(0.157219, 0.12312249)
+texture = ExtResource("4_xy5eq")
+
+[node name="BaguetteNobg3" type="Sprite2D" parent="." unique_id=910964198]
+position = Vector2(838, 149)
+scale = Vector2(0.157219, 0.12312249)
+texture = ExtResource("4_xy5eq")
+
+[node name="BaguetteNobg4" type="Sprite2D" parent="." unique_id=145447034]
+position = Vector2(913, 388)
+scale = Vector2(0.157219, 0.12312249)
+texture = ExtResource("4_xy5eq")
+
+[node name="BaguetteNobg5" type="Sprite2D" parent="." unique_id=458640075]
+position = Vector2(677, 141)
+scale = Vector2(0.157219, 0.12312249)
+texture = ExtResource("4_xy5eq")
+
+[node name="BaguetteNobg6" type="Sprite2D" parent="." unique_id=1173934467]
+position = Vector2(71, 381)
+scale = Vector2(0.157219, 0.12312249)
+texture = ExtResource("4_xy5eq")
+
+[node name="BaguetteNobg7" type="Sprite2D" parent="." unique_id=1017452696]
+position = Vector2(442, 623)
+scale = Vector2(0.157219, 0.12312249)
+texture = ExtResource("4_xy5eq")
+
+[node name="Button" type="Button" parent="." unique_id=1141199441]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 611.0
+offset_right = 631.0
+offset_bottom = 642.0
+text = "main menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

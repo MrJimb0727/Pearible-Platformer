@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://s10dphypt6f6"]
+
+[ext_resource type="Texture2D" uid="uid://dxw84bokdiljw" path="res://Assets/Textures/SunsetBg.png" id="1_n3v53"]
+[ext_resource type="PackedScene" uid="uid://bkiov25muwnjp" path="res://Scenes/goal.tscn" id="2_2bm25"]
+[ext_resource type="PackedScene" uid="uid://b4tr6s67hpeki" path="res://Scenes/platform.tscn" id="3_qa21w"]
+[ext_resource type="PackedScene" uid="uid://d0bf848nvcfqc" path="res://Scenes/killbrick.tscn" id="4_2bm25"]
+[ext_resource type="PackedScene" uid="uid://bmtty2tmmg75c" path="res://Scenes/player.tscn" id="4_476sc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 257
+font_color = Color(1, 0, 0, 1)
+
+[node name="Level8" type="Node2D" unique_id=1010392366]
+
+[node name="Environment" type="Node2D" parent="." unique_id=187565421]
+
+[node name="Background" type="Sprite2D" parent="Environment" unique_id=1575083041]
+scale = Vector2(1.1199999, 0.63999915)
+texture = ExtResource("1_n3v53")
+metadata/_edit_lock_ = true
+
+[node name="Goal" parent="Environment" unique_id=543016495 instance=ExtResource("2_2bm25")]
+position = Vector2(2331, 1301)
+
+[node name="Platform" parent="Environment" unique_id=272844883 instance=ExtResource("3_qa21w")]
+position = Vector2(-2779, -21)
+
+[node name="Platform2" parent="Environment" unique_id=1006577951 instance=ExtResource("3_qa21w")]
+position = Vector2(30.99997, 1606)
+rotation = 1.5707964
+scale = Vector2(1.7297432, 50.450783)
+
+[node name="Platform3" parent="Environment" unique_id=1200515009 instance=ExtResource("3_qa21w")]
+position = Vector2(31, -1557)
+rotation = 1.5707964
+scale = Vector2(1.7297432, 50.450783)
+
+[node name="Platform4" parent="Environment" unique_id=1958929923 instance=ExtResource("3_qa21w")]
+position = Vector2(2856, -21)
+
+[node name="Platform5" parent="Environment" unique_id=1737885823 instance=ExtResource("3_qa21w")]
+position = Vector2(-3.0000038, 1285)
+rotation = 1.5707964
+
+[node name="Killbrick" parent="Environment" unique_id=1157336942 instance=ExtResource("4_2bm25")]
+position = Vector2(98.00001, -553)
+rotation = -1.5707964
+scale = Vector2(8.762548, 4.5125003)
+
+[node name="Player" parent="." unique_id=73212269 groups=["Player"] instance=ExtResource("4_476sc")]
+position = Vector2(-2327, 957)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1287237934]
+zoom = Vector2(0.2, 0.2)
+
+[node name="Label" type="Label" parent="." unique_id=527971894]
+offset_left = -2540.0
+offset_top = 398.0
+offset_right = 357.0
+offset_bottom = 749.0
+rotation = -0.69333255
+text = "THE RAT GOD!!!!!1!!11!!1"
+label_settings = SubResource("LabelSettings_g4v7s")
