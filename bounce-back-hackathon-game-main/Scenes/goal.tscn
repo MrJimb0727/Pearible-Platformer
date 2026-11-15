@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bkiov25muwnjp"]
+
+[ext_resource type="Script" uid="uid://dk0dji7li2t8q" path="res://Scripts/goal.gd" id="1_paeek"]
+[ext_resource type="Texture2D" uid="uid://3djv0uei2pto" path="res://Assets/Textures/baguette.jpg" id="2_s0pnd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2lgk0"]
+size = Vector2(556, 556)
+
+[node name="Goal" type="Area2D" unique_id=543016495 groups=["Goal"]]
+script = ExtResource("1_paeek")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2030685963]
+texture = ExtResource("2_s0pnd")
+
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=1917420853 groups=["Goal"]]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_2lgk0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

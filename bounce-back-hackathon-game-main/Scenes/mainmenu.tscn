@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://dn5pslkse8sha"]
+
+[ext_resource type="Script" uid="uid://kprdwej20utq" path="res://Scripts/mainmenu.gd" id="1_pposm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 70
+font_color = Color(0, 0.7137255, 0.8352941, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7u77a"]
+font_size = 40
+font_color = Color(0, 0.7137255, 0.8352941, 1)
+
+[node name="Control" type="Control" unique_id=2138608028]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pposm")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1970695631]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -23.0
+offset_right = 23.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="HBoxContainer" unique_id=1720913800]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Pear-ible Platformer"
+label_settings = SubResource("LabelSettings_g4v7s")
+
+[node name="StartButton" type="Button" parent="." unique_id=834561415]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.99994
+offset_top = 182.0
+offset_right = -15.999939
+offset_bottom = 222.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.3600025, 2.3600025)
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0, 0.7137255, 0.8352941, 1)
+text = "Start"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=991997999]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -109.0
+offset_top = -20.0
+offset_right = 109.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Instructions" type="Label" parent="HBoxContainer2" unique_id=1982811318]
+layout_mode = 2
+text = "WASD + Arrow Keys to Move
+R to Quick Restart"
+label_settings = SubResource("LabelSettings_7u77a")
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

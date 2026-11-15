@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b4tr6s67hpeki"]
+
+[ext_resource type="Texture2D" uid="uid://doc5sr6ia8t3x" path="res://Assets/Textures/weezyblue.png" id="1_1rc8e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(129, 127.29917)
+
+[node name="Platform" type="StaticBody2D" unique_id=272844883]
+position = Vector2(-2779, -24)
+scale = Vector2(1.7262934, 25.748947)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1119919020]
+scale = Vector2(0.3975529, 0.39881045)
+texture = ExtResource("1_1rc8e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=135382977]
+position = Vector2(-0.49987793, 0.09747505)
+scale = Vector2(1, 0.9999999)
+shape = SubResource("RectangleShape2D_yf5fn")

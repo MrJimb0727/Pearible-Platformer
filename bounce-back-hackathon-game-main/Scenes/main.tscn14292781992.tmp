@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://gox4w3fd0sme"]
+
+[ext_resource type="PackedScene" uid="uid://bmtty2tmmg75c" path="res://Scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://b4tr6s67hpeki" path="res://Scenes/platform.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://d0bf848nvcfqc" path="res://Scenes/killbrick.tscn" id="3_8gbba"]
+
+[node name="Main" type="Node2D" unique_id=1010392366]
+
+[node name="Environment" type="Node2D" parent="." unique_id=187565421]
+
+[node name="Background" type="Sprite2D" parent="Environment" unique_id=1575083041]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1287237934]
+zoom = Vector2(0.2, 0.2)
+
+[node name="Player" parent="." unique_id=73212269 instance=ExtResource("1_jjgbg")]
+position = Vector2(-2272, -1212)
+
+[node name="Platform" parent="." unique_id=272844883 instance=ExtResource("2_bo1nx")]
+position = Vector2(-2779, -21)
+
+[node name="Platform2" parent="." unique_id=1006577951 instance=ExtResource("2_bo1nx")]
+position = Vector2(30.99997, 1606)
+rotation = 1.5707964
+scale = Vector2(1.7297432, 50.450783)
+
+[node name="Platform3" parent="." unique_id=1200515009 instance=ExtResource("2_bo1nx")]
+position = Vector2(31, -1557)
+rotation = 1.5707964
+scale = Vector2(1.7297432, 50.450783)
+
+[node name="Platform4" parent="." unique_id=1958929923 instance=ExtResource("2_bo1nx")]
+position = Vector2(2856, -21)
+
+[node name="Killbrick" parent="." unique_id=1157336942 instance=ExtResource("3_8gbba")]
+position = Vector2(-691, 816)

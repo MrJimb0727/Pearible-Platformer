@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d0bf848nvcfqc"]
+
+[ext_resource type="Script" uid="uid://cjqg7rd6cqtv4" path="res://Scripts/killbrick.gd" id="1_4nqav"]
+[ext_resource type="Texture2D" uid="uid://bm5aowdvx1dj8" path="res://Assets/Textures/petah.jpg" id="2_jbbec"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s0pnd"]
+size = Vector2(553, 554)
+
+[node name="Killbrick" type="Area2D" unique_id=1157336942 groups=["Killbrick"]]
+script = ExtResource("1_4nqav")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1948554140]
+scale = Vector2(2.184, 2.184)
+texture = ExtResource("2_jbbec")
+
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=530031116 groups=["Killbrick"]]
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_s0pnd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
