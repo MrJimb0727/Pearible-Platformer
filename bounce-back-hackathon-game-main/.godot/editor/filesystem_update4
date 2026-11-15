@@ -1,0 +1,6 @@
+res://Scenes/level1.tscn
+res://Scripts/goal.gd
+res://Scripts/killbrick.gd
+res://Scripts/player.gd
+res://Scenes/level3.tscn
+res://Scenes/level2.tscn
