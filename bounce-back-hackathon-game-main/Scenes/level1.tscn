@@ -12,6 +12,7 @@
 [node name="Background" type="Sprite2D" parent="Environment" unique_id=1575083041]
 scale = Vector2(1.1199999, 0.63999915)
 texture = ExtResource("1_y4dr7")
+metadata/_edit_lock_ = true
 
 [node name="Goal" parent="Environment" unique_id=543016495 instance=ExtResource("3_2a60c")]
 position = Vector2(2331, 1301)
