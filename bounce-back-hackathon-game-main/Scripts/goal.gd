@@ -13,3 +13,9 @@ func _on_body_entered(body) -> void:
 			get_tree().change_scene_to_file("res://Scenes/level2.tscn")
 		elif currScene == "res://Scenes/level2.tscn":
 			get_tree().change_scene_to_file("res://Scenes/level3.tscn")
+		elif currScene == "res://Scenes/level3.tscn":
+			get_tree().change_scene_to_file("res://Scenes/level4.tscn")
+		elif currScene == "res://Scenes/level4.tscn":
+			get_tree().change_scene_to_file("res://Scenes/level5.tscn")
+		elif currScene == "res://Scenes/level5.tscn":
+			get_tree().change_scene_to_file("res://Scenes/level6.tscn")

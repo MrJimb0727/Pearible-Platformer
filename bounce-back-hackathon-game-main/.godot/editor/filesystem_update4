@@ -1,9 +1,11 @@
 res://Scenes/level1.tscn
-<<<<<<< Updated upstream
 res://Scripts/goal.gd
 res://Scripts/killbrick.gd
 res://Scripts/player.gd
 res://Scenes/level3.tscn
 res://Scenes/level2.tscn
-=======
->>>>>>> Stashed changes
+res://Scenes/mainmenu.tscn
+res://Scenes/level4.tscn
+res://Scenes/evilgoal.gd
+res://Scenes/evilgoal.tscn
+res://Scenes/secret.tscn
