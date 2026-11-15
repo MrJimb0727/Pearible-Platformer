@@ -16,7 +16,12 @@ func _physics_process(delta: float) -> void:
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		velocity.y = JUMP_VELOCITY * Globals.sizevar
+		
+		if velocity.y < -1750:
+			velocity.y = -1750
+		elif velocity.y > -800:
+			velocity.y = -800
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -33,4 +38,6 @@ func _process(_delta: float) -> void:
 	
 	if Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
+		Globals.sizevar = randf_range(0.05, 3)
+		Globals.size = Vector2(Globals.sizevar, Globals.sizevar)
 	
