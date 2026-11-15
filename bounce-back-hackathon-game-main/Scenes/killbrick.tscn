@@ -19,7 +19,7 @@ texture = ExtResource("2_jbbec")
 position = Vector2(-19, -39.5)
 shape = SubResource("RectangleShape2D_s0pnd")
 
-[node name="Splat" type="AudioStreamPlayer2D" parent="." unique_id=56434451]
+[node name="Splat" type="AudioStreamPlayer" parent="." unique_id=1395344626]
 stream = ExtResource("3_e4ibg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

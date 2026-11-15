@@ -1,3 +1,7 @@
 res://Scenes/level3.tscn
 res://Scripts/player.gd
 res://Scenes/level4.tscn
+res://Scenes/killbrick.tscn
+res://Scripts/killbrick.gd
+res://Scenes/splat.gd
+res://Scenes/player.tscn

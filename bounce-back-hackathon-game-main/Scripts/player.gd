@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var splat = $Splat
 
 const SPEED = 700.0
 const JUMP_VELOCITY = -800.0
@@ -37,7 +38,8 @@ func _process(_delta: float) -> void:
 	Globals.size = player.scale
 	
 	if Input.is_action_just_pressed("reset"):
+		splat.play()
+		await get_tree().create_timer(0.5).timeout
 		get_tree().reload_current_scene()
 		Globals.sizevar = randf_range(0.05, 3)
 		Globals.size = Vector2(Globals.sizevar, Globals.sizevar)
-	
