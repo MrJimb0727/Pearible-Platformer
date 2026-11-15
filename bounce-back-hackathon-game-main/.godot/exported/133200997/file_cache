@@ -1,0 +1,16 @@
+res://Scenes/evilgoal.tscn::2fc3adeed6b8651f4c829bc3ef0d2653::1794753069::res://.godot/exported/133200997/export-b63730641734d434ff639e2ff49a1f06-evilgoal.scn
+res://Scenes/goal.tscn::1ac0493f1ba160ef1837f584edaf8a8e::1794743822::res://.godot/exported/133200997/export-c359cb94f05598ce916fe77712ac92e6-goal.scn
+res://Scenes/killbrick.tscn::7f622f51ab0a9fa38e3611d11ad9738c::1794752082::res://.godot/exported/133200997/export-21a547aeefe8378d3ed837f7e7404459-killbrick.scn
+res://Scenes/level1.tscn::b46f8db884acfee57ba76b8553bc6a37::1794744865::res://.godot/exported/133200997/export-850454f34ca932024817aa3644773966-level1.scn
+res://Scenes/level2.tscn::f94f98982fef5978f168c1cfb45d4e52::1794744867::res://.godot/exported/133200997/export-118487f21f2527308bea37421a857818-level2.scn
+res://Scenes/level3.tscn::a4253cc573fb6a7d838c93c5121920af::1794766914::res://.godot/exported/133200997/export-af226d379f99da112edf1ae840313f0a-level3.scn
+res://Scenes/level4.tscn::25778d17f6adff45cbe8f0edf540e4be::1794767520::res://.godot/exported/133200997/export-0006f4a28a8826d8b09f60afdeae1060-level4.scn
+res://Scenes/level5.tscn::97e4b59a4e4a2e44d760bd92f6e9b2e2::1794762851::res://.godot/exported/133200997/export-66a0ddfcc0fab152991233570f10380b-level5.scn
+res://Scenes/level6.tscn::e20ea64785374f0f6a94bc708a325251::1794763308::res://.godot/exported/133200997/export-717bcf2c61ed6925d393fff792af0c38-level6.scn
+res://Scenes/level7.tscn::1e51a4eb8fe1461016334b4479bc9a59::1794763933::res://.godot/exported/133200997/export-ec376615593ab841d994351afadda5ef-level7.scn
+res://Scenes/level8.tscn::8da653771614648313ae2b0d597004ca::1794765673::res://.godot/exported/133200997/export-7ee17577adb0949ff6cac5c8bcac620a-level8.scn
+res://Scenes/mainmenu.tscn::31d07db22f3e630e421064cbeaa53b44::1794767921::res://.godot/exported/133200997/export-6a5cc2d46eaa3047576fb0f8c0594535-mainmenu.scn
+res://Scenes/platform.tscn::533123dab5b5413290ac06ae00c668bc::1794727560::res://.godot/exported/133200997/export-1c750248b0c8da796cecd1f6aa3f1f6d-platform.scn
+res://Scenes/player.tscn::e2d51969518b1e4e871a5366b7d8c9a4::1794752082::res://.godot/exported/133200997/export-1753c997600d68ab5d20ae99fddb15c6-player.scn
+res://Scenes/secret.tscn::6254d12504d299d2ea54d5c47d5194d8::1794767834::res://.godot/exported/133200997/export-90c234ee3e4157cb2026c67b12038d3b-secret.scn
+res://Scenes/victory.tscn::87dcf178b9cb4c90d4efeedec57f1a05::1794767713::res://.godot/exported/133200997/export-a7e6a4ebb61950b5adb5366cb6c52708-victory.scn
