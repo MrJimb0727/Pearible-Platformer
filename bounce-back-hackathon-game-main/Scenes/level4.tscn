@@ -5,6 +5,15 @@
 [ext_resource type="PackedScene" uid="uid://bkiov25muwnjp" path="res://Scenes/goal.tscn" id="3_ohik4"]
 [ext_resource type="PackedScene" uid="uid://bmtty2tmmg75c" path="res://Scenes/player.tscn" id="4_adi6q"]
 [ext_resource type="PackedScene" uid="uid://d0bf848nvcfqc" path="res://Scenes/killbrick.tscn" id="5_7u67b"]
+[ext_resource type="PackedScene" uid="uid://bj1k0yd66abur" path="res://Scenes/evilgoal.tscn" id="6_46vi4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 327
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ohik4"]
+font_size = 149
+font_color = Color(1, 0, 0, 1)
 
 [node name="Level2" type="Node2D" unique_id=1010392366]
 
@@ -13,6 +22,7 @@
 [node name="Background" type="Sprite2D" parent="Environment" unique_id=1575083041]
 scale = Vector2(1.1199999, 0.63999915)
 texture = ExtResource("1_x5oe7")
+metadata/_edit_lock_ = true
 
 [node name="Platform" parent="Environment" unique_id=272844883 instance=ExtResource("2_46vi4")]
 position = Vector2(-2893, -41)
@@ -69,18 +79,25 @@ zoom = Vector2(0.2, 0.2)
 [node name="Player" parent="." unique_id=73212269 groups=["Player"] instance=ExtResource("4_adi6q")]
 position = Vector2(-2485, -793)
 
-[node name="Killbrick5" parent="." unique_id=169907615 instance=ExtResource("5_7u67b")]
-position = Vector2(-55, 1423)
-scale = Vector2(0.5, 0.5)
-
-[node name="Killbrick6" parent="." unique_id=1157336942 instance=ExtResource("5_7u67b")]
-position = Vector2(119, 1423)
-scale = Vector2(0.5, 0.5)
-
-[node name="Killbrick7" parent="." unique_id=1747709663 instance=ExtResource("5_7u67b")]
-position = Vector2(293, 1427)
-scale = Vector2(0.5, 0.5)
-
 [node name="Killbrick8" parent="." unique_id=103859441 instance=ExtResource("5_7u67b")]
-position = Vector2(450, 1427)
-scale = Vector2(0.5, 0.5)
+position = Vector2(284, 1427)
+scale = Vector2(2.22, 0.5)
+
+[node name="Label" type="Label" parent="." unique_id=989670790]
+offset_left = -2685.0
+offset_top = 437.0
+offset_right = -350.0
+offset_bottom = 883.0
+text = "giant rat pit -->"
+label_settings = SubResource("LabelSettings_g4v7s")
+
+[node name="Label2" type="Label" parent="." unique_id=75339178]
+offset_left = 1367.0
+offset_top = 1113.0
+offset_right = 3702.0
+offset_bottom = 1559.0
+text = "evil baguette"
+label_settings = SubResource("LabelSettings_ohik4")
+
+[node name="Goal2" parent="." unique_id=1516399025 instance=ExtResource("6_46vi4")]
+position = Vector2(2535, 1287)

@@ -1,7 +1,11 @@
-res://Scenes/level3.tscn
-res://Scripts/player.gd
-res://Scenes/level4.tscn
-res://Scenes/killbrick.tscn
+res://Scenes/level1.tscn
+res://Scripts/goal.gd
 res://Scripts/killbrick.gd
-res://Scenes/splat.gd
-res://Scenes/player.tscn
+res://Scripts/player.gd
+res://Scenes/level3.tscn
+res://Scenes/level2.tscn
+res://Scenes/mainmenu.tscn
+res://Scenes/level4.tscn
+res://Scenes/evilgoal.gd
+res://Scenes/evilgoal.tscn
+res://Scenes/secret.tscn
