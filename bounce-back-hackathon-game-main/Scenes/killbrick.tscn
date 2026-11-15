@@ -1,20 +1,25 @@
 [gd_scene format=3 uid="uid://d0bf848nvcfqc"]
 
 [ext_resource type="Script" uid="uid://cjqg7rd6cqtv4" path="res://Scripts/killbrick.gd" id="1_4nqav"]
-[ext_resource type="Texture2D" uid="uid://bm5aowdvx1dj8" path="res://Assets/Textures/petah.jpg" id="2_jbbec"]
+[ext_resource type="Texture2D" uid="uid://ck6noywmk82sm" path="res://Assets/Textures/Rat.png" id="2_jbbec"]
+[ext_resource type="AudioStream" uid="uid://ev741p6nkx7y" path="res://Assets/Audio/Splat2.ogg" id="3_e4ibg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s0pnd"]
-size = Vector2(553, 554)
+size = Vector2(352, 555)
 
 [node name="Killbrick" type="Area2D" unique_id=1157336942 groups=["Killbrick"]]
 script = ExtResource("1_4nqav")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1948554140]
-scale = Vector2(2.184, 2.184)
+position = Vector2(4.744008, 0)
+scale = Vector2(2.1579342, 2.184)
 texture = ExtResource("2_jbbec")
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=530031116 groups=["Killbrick"]]
-position = Vector2(1.5, 0)
+position = Vector2(-19, -39.5)
 shape = SubResource("RectangleShape2D_s0pnd")
+
+[node name="Splat" type="AudioStreamPlayer2D" parent="." unique_id=56434451]
+stream = ExtResource("3_e4ibg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

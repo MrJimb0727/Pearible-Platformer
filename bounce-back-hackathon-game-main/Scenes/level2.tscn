@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bmtty2tmmg75c" path="res://Scenes/player.tscn" id="4_mhlpv"]
 [ext_resource type="PackedScene" uid="uid://d0bf848nvcfqc" path="res://Scenes/killbrick.tscn" id="5_ng020"]
 
-[node name="Level1" type="Node2D" unique_id=1010392366]
+[node name="Level2" type="Node2D" unique_id=1010392366]
 
 [node name="Environment" type="Node2D" parent="." unique_id=187565421]
 
@@ -82,7 +82,7 @@ rotation = 1.5707964
 scale = Vector2(0.6862918, 27.470253)
 
 [node name="Goal" parent="Environment" unique_id=543016495 instance=ExtResource("3_lgosu")]
-position = Vector2(-2622, 1345)
+position = Vector2(-2523, 1286)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1287237934]
 zoom = Vector2(0.2, 0.2)
@@ -91,23 +91,19 @@ zoom = Vector2(0.2, 0.2)
 position = Vector2(-2272, -1212)
 
 [node name="Killbrick" parent="." unique_id=1157336942 instance=ExtResource("5_ng020")]
-position = Vector2(-663.00006, -856)
+position = Vector2(-549, -682)
 scale = Vector2(0.5199994, 0.5199994)
 
 [node name="Killbrick2" parent="." unique_id=1185757407 instance=ExtResource("5_ng020")]
-position = Vector2(454, -61)
+position = Vector2(472.00003, 4.999996)
 scale = Vector2(0.31292793, 0.31292793)
 
 [node name="Killbrick3" parent="." unique_id=2067779735 instance=ExtResource("5_ng020")]
-position = Vector2(1526, -345.00003)
-scale = Vector2(0.31292793, 0.31292793)
-
-[node name="Killbrick4" parent="." unique_id=1305056517 instance=ExtResource("5_ng020")]
-position = Vector2(1526, -345.00003)
+position = Vector2(1528, -300.00003)
 scale = Vector2(0.31292793, 0.31292793)
 
 [node name="Killbrick5" parent="." unique_id=169907615 instance=ExtResource("5_ng020")]
-position = Vector2(1262, 1415.9999)
+position = Vector2(1266.0001, 1453)
 scale = Vector2(0.31292793, 0.31292793)
 
 [node name="Killbrick6" parent="." unique_id=1796980278 instance=ExtResource("5_ng020")]
