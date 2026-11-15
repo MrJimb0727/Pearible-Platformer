@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://doa85r4dgx02r"]
+
+[ext_resource type="Texture2D" uid="uid://dxw84bokdiljw" path="res://Assets/Textures/SunsetBg.png" id="1_4nwb3"]
+[ext_resource type="PackedScene" uid="uid://bkiov25muwnjp" path="res://Scenes/goal.tscn" id="2_46n1c"]
+[ext_resource type="PackedScene" uid="uid://b4tr6s67hpeki" path="res://Scenes/platform.tscn" id="3_0tnr5"]
+[ext_resource type="PackedScene" uid="uid://bmtty2tmmg75c" path="res://Scenes/player.tscn" id="4_fysvu"]
+[ext_resource type="PackedScene" uid="uid://d0bf848nvcfqc" path="res://Scenes/killbrick.tscn" id="5_46n1c"]
+
+[node name="Level1" type="Node2D" unique_id=1010392366]
+
+[node name="Environment" type="Node2D" parent="." unique_id=187565421]
+
+[node name="Background" type="Sprite2D" parent="Environment" unique_id=1575083041]
+scale = Vector2(1.1199999, 0.63999915)
+texture = ExtResource("1_4nwb3")
+metadata/_edit_lock_ = true
+
+[node name="Goal" parent="Environment" unique_id=543016495 instance=ExtResource("2_46n1c")]
+position = Vector2(2331, 97)
+
+[node name="Platform" parent="Environment" unique_id=272844883 instance=ExtResource("3_0tnr5")]
+position = Vector2(-2779, -21)
+
+[node name="Platform2" parent="Environment" unique_id=1006577951 instance=ExtResource("3_0tnr5")]
+position = Vector2(30.99997, 1606)
+rotation = 1.5707964
+scale = Vector2(1.7297432, 50.450783)
+
+[node name="Platform3" parent="Environment" unique_id=1200515009 instance=ExtResource("3_0tnr5")]
+position = Vector2(31, -1557)
+rotation = 1.5707964
+scale = Vector2(1.7297432, 50.450783)
+
+[node name="Platform4" parent="Environment" unique_id=1958929923 instance=ExtResource("3_0tnr5")]
+position = Vector2(2856, -21)
+
+[node name="Platform5" parent="Environment" unique_id=1737885823 instance=ExtResource("3_0tnr5")]
+position = Vector2(-1799, -401)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform6" parent="Environment" unique_id=397669001 instance=ExtResource("3_0tnr5")]
+position = Vector2(-1515, -176.00005)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform7" parent="Environment" unique_id=948790455 instance=ExtResource("3_0tnr5")]
+position = Vector2(-1201, 24.999985)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform8" parent="Environment" unique_id=1186833051 instance=ExtResource("3_0tnr5")]
+position = Vector2(-899, 166.99998)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform9" parent="Environment" unique_id=675935640 instance=ExtResource("3_0tnr5")]
+position = Vector2(191, 2322)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform14" parent="Environment" unique_id=488220962 instance=ExtResource("3_0tnr5")]
+position = Vector2(165, -374)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform15" parent="Environment" unique_id=517708175 instance=ExtResource("3_0tnr5")]
+position = Vector2(728, -591)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform16" parent="Environment" unique_id=885549594 instance=ExtResource("3_0tnr5")]
+position = Vector2(1300, -860)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform17" parent="Environment" unique_id=768351568 instance=ExtResource("3_0tnr5")]
+position = Vector2(1751, -1137)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform18" parent="Environment" unique_id=2110458163 instance=ExtResource("3_0tnr5")]
+position = Vector2(2321, -1370)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform10" parent="Environment" unique_id=913580582 instance=ExtResource("3_0tnr5")]
+position = Vector2(759, 2120)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform11" parent="Environment" unique_id=819762284 instance=ExtResource("3_0tnr5")]
+position = Vector2(1333, 1936.0002)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform12" parent="Environment" unique_id=2065123052 instance=ExtResource("3_0tnr5")]
+position = Vector2(1759, 1735)
+scale = Vector2(1.186, 17.684)
+
+[node name="Platform13" parent="Environment" unique_id=511821856 instance=ExtResource("3_0tnr5")]
+position = Vector2(2318, 1534.0001)
+scale = Vector2(1.186, 17.684)
+
+[node name="Player" parent="." unique_id=73212269 groups=["Player"] instance=ExtResource("4_fysvu")]
+position = Vector2(-2262, 1170)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1287237934]
+zoom = Vector2(0.2, 0.2)
+
+[node name="Killbrick" parent="." unique_id=1157336942 instance=ExtResource("5_46n1c")]
+position = Vector2(1064, 1336)
+
+[node name="Killbrick2" parent="." unique_id=1322111356 instance=ExtResource("5_46n1c")]
+position = Vector2(1610, 1336)
+
+[node name="Killbrick3" parent="." unique_id=1594227486 instance=ExtResource("5_46n1c")]
+position = Vector2(2061, 1345)
+
+[node name="Killbrick4" parent="." unique_id=1020889923 instance=ExtResource("5_46n1c")]
+position = Vector2(2581, 1336)
+
+[node name="Killbrick5" parent="." unique_id=21192188 instance=ExtResource("5_46n1c")]
+position = Vector2(526, 1345)
