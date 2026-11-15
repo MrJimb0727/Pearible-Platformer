@@ -15,7 +15,7 @@ scale = Vector2(1.1199999, 0.63999915)
 texture = ExtResource("1_jaajx")
 
 [node name="Platform" parent="Environment" unique_id=272844883 instance=ExtResource("2_mrxql")]
-position = Vector2(-5263, 2346)
+position = Vector2(-2893, -41)
 
 [node name="Platform2" parent="Environment" unique_id=1006577951 instance=ExtResource("2_mrxql")]
 position = Vector2(30.99997, 1606)
