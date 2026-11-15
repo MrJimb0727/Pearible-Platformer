@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var splat = $Splat
 
-const SPEED = 700.0
+const SPEED = 1000.0
 const JUMP_VELOCITY = -800.0
 
 @onready var player: CharacterBody2D = $"."
